@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+
+{% block title %}Newest Car{% endblock %}
+
+{% block content %}
+<h3 style="text-align: center;">Newest car</h3>
+{% for car in cars %}
+<div class="card">
+    <p>Name: {{ car.name }}</p>
+    <p>Brand: {{ car.brand }}</p>
+    <p>Manufacturing Year: {{ car.manufacturing_year }}</p>
+</div>
+{% endfor %}
+{% endblock %}

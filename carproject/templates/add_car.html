@@ -1,0 +1,12 @@
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" onclick="showResponse()">Add Car</button>
+</form>
+
+<script>
+    function showResponse() {
+        alert("Car added successfully!");
+    }
+</script>

@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+
+{% block title %}Top Selling Car{% endblock %}
+
+{% block content %}
+<h3 style="text-align: center;">Top selling car</h3>
+{% for car in cars %}
+<div class="card" style="background-color: #f8f4f4; padding: 10px; margin-bottom: 10px; border-radius: 5px;">
+    <p>Name: {{ car.name }}</p>
+    <p>Brand: {{ car.brand }}</p>
+    <p>Selling Quantity: {{ car.selling_quantity }}</p>
+</div>
+{% endfor %}
+{% endblock %}
